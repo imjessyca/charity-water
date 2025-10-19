@@ -1,0 +1,142 @@
+/* ========== BASE STYLES ========== */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #FFF7E1;
+  color: #003366;
+}
+h1, p, a {
+  margin: 0;
+  padding: 0;
+}
+/* ========== MAIN CONTAINER ========== */
+.landing-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+/* ========== LEFT SIDE ========== */
+.left-side {
+  flex: 1;
+  background-color: #003366;
+  color: #FFF7E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: top center;
+}
+.text-box h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+  margin-top: 1rem;
+}
+/* ========== RIGHT SIDE ========== */
+.right-side {
+  flex: 1;
+  background-color: #FFF7E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.tagline {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  max-width: 450px;
+  margin-bottom: 2rem;
+}
+/* ========== BUTTONS ========== */
+.button-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 320px;
+}
+.btn {
+  background-color: #003366;
+  color: #FFF7E1;
+  text-decoration: none;
+  padding: 0.9rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #00224d;
+  transform: translateY(-2px);
+}
+
+.donate {
+  background-color: #003366;
+}
+
+/* ========== DIVIDER ========== */
+hr {
+  width: 60%;
+  border: 1px solid #003366;
+  margin: 2rem 0;
+}
+
+/* ========== SOCIAL ========== */
+.social-text {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.social-icons img {
+  width: 28px;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #003366;
+  background-color: #FFF7E1;
+  padding: 1rem 0;
+  border-top: 1px solid #003366;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .text-box h1 {
+    font-size: 2.4rem;
+  }
+
+  .button-section {
+    grid-template-columns: 1fr;
+  }
+}
